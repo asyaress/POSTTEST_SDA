@@ -45,9 +45,14 @@ int main()
 
 /*
 HASIL ANALISIS KOMPLEKSITAS MANUWAL:
-----------------------------------
-T_min(n) = c1 + c2*n + c3*(n-1) + c5
-T_max(n) = c1 + c2*n + c3*(n-1) + c4*(n-1) + c5
+
+Best Case:
+Tmin(n) = (C1 + C2 + C3 + C10 + C11) + (C4 + C9)n + (C5 + C8) (n−1)
+Linear  =  O(n)
+
+Worst Case:
+Tmax(n) = (C1 + C2 + C3 + C10 + C11) + (C4 + C9)n + (C5 + C6 +C7 + C8) (n−1)
+Linear = O(n)
 
 KESIMPULAN BIG-O:
 - Best Case  : O(n)
@@ -56,4 +61,3 @@ Alasan: Kedua persamaan merupakan fungsi linear terhadap n.
 
 Kalau mau liat detail ada di POSTTEST_SDA/POSTTEST_1/Jawaban-Min-Max.pdf
 */
-
